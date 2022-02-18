@@ -1,13 +1,19 @@
 import Head from 'next/head'
+//import {useEffect} from 'react'
+
 import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
 import Header from "../src/components/Header.js";
 import logo from '../src/components/tatadigital1.png';
-// import Link from 'next/link';
-//import anime from 'animejs/lib/anime.es.js';
+import shap1 from '../src/components/shape1.jpg';
+import shap2 from '../src/components/shape2.jpg';
+import shap3 from '../src/components/shape3.jpg';
+import shap4 from '../src/components/shape4.jpg';
+import shap5 from '../src/components/shape5.jpg';
+//import anime from "animejs";
 
 export default function Home() {
-  
+ 
   return (
     <>
       <Head>
@@ -25,12 +31,24 @@ export default function Home() {
           </div>
         <h1 className="text-4xl	text-center w-[280px] text-fuchsia-500">Making every day better
         </h1>
-        <div className="bg-purple-500 w-[200px] h-[200px] absolute top-0	left-0"></div>
-        <div className="bg-purple-300 w-[200px] h-[200px] absolute top-0	right-0"></div>
-        <div className="bg-blue-300 w-[100px] h-[100px] absolute top-0	right-0 left-0 m-auto	top-10"></div>
-        <div className="bg-gray-400 w-[150px] h-[150px] absolute right-0 bottom-0"></div>
-        <div className="bg-blue-700 w-[100px] h-[100px] absolute	right-0 left-0 m-auto	bottom-0"></div>
-        <div className="bg-green-300 w-[200px] h-[200px] absolute	left-20 bottom-10"></div>
+
+        <div id="logo" className="w-[200px] h-[200px] absolute -top-4	left-0">
+        <Image src={shap1} alt="shape"/>
+        </div>
+        <div className="w-[200px] h-[200px] absolute top-0 -mt-4	-right-0">
+        <Image src={shap3} alt="shape"/>
+        </div>
+        <div className="w-[100px] h-[100px] absolute top-0	right-0 left-0 m-auto	top-10">
+        <Image src={shap2} alt="shape"/>
+        </div>
+        <div className="absolute right-0  -bottom-2">
+        <Image src={shap5} alt="shape"/>
+        </div>
+        {/* <div className="bg-blue-700 w-[100px] h-[100px] absolute	right-0 left-0 m-auto	bottom-0"></div> */}
+        <div id="logo2" className="absolute	left-20 bottom-10">
+        <Image src={shap4} alt="shape"/>
+        </div>
+
         </div>
         
     </div>
